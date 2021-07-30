@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "6fd4816c-b14e-4ba6-b4ac-58a751fd5f4b",
+		"name": "AWS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Buckets By BuckeName",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Im5PbzNaRHJPRFhFSzFqS1doWHNsSFJfS1hFZyIsImtpZCI6Im5PbzNaRHJPRFhFSzFqS1doWHNsSFJfS1hFZyJ9.eyJhdWQiOiJodHRwczovL21hbmFnZW1lbnQuYXp1cmUuY29tIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvZWZmN2Y5ODUtZGM1OC00OTM1LWE5MDYtMDUwNjA5YmU4NWMzLyIsImlhdCI6MTYxMTg0NjUxOCwibmJmIjoxNjExODQ2NTE4LCJleHAiOjE2MTE4NTA0MTgsImFpbyI6IkUyWmdZSWl5L0prcDFpa3hRZmhoczQ3VjBVOWNBQT09IiwiYXBwaWQiOiI0MjIxN2QwNy0wMjI0LTQwNDQtYTY4My0yN2I2MDdmMTRjYWEiLCJhcHBpZGFjciI6IjEiLCJpZHAiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9lZmY3Zjk4NS1kYzU4LTQ5MzUtYTkwNi0wNTA2MDliZTg1YzMvIiwib2lkIjoiZWFmZjgxNDQtNGRlNi00ZDMxLTg1MGEtOGJhOTE2NTAxZDliIiwicmgiOiIwLkFBQUFoZm4zNzFqY05VbXBCZ1VHQ2I2Rnd3ZDlJVUlrQWtSQXBvTW50Z2Z4VEtwdUFBQS4iLCJzdWIiOiJlYWZmODE0NC00ZGU2LTRkMzEtODUwYS04YmE5MTY1MDFkOWIiLCJ0aWQiOiJlZmY3Zjk4NS1kYzU4LTQ5MzUtYTkwNi0wNTA2MDliZTg1YzMiLCJ1dGkiOiJFRTgyT05ycHRrT0hUajFzR0g4MUFBIiwidmVyIjoiMS4wIiwieG1zX3RjZHQiOjE0MjIyOTYzNTZ9.ZLDplpblp0dtTe0DL0QXmLLZpESEjnMFOf9KLNpHOda2QmpRB5aNi66xN-qI6tsLBFhRI0qjVZXc9e9ZVk9FWww6GRItV5GO24iL2gChBgo5FZTlNX5PEtwpINhDLpP-KkIhVs1_Rqf4yE5KsoAN9HpQOpoBBVOqEMQABzzC9OU5bhnZp2gOwbhiyp6caiaDChUTqo5Cxg6bcjDlmm_ZPtCpRPKmo_MELpJz4486yu5QBucAA9AOP3ibC4KR-VkH7A6TpdQSYzY-4KRAMZomMU3VI56nuR4qoWRNj7ObW4z3_dNXxap1-EaJtIdfX1yw15j7msDCyb2pgw4Zm3Nniw"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/aws/s3/buckets/mtestsm-bucket2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"aws",
+						"s3",
+						"buckets",
+						"mtestsm-bucket2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Buckets",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Im5PbzNaRHJPRFhFSzFqS1doWHNsSFJfS1hFZyIsImtpZCI6Im5PbzNaRHJPRFhFSzFqS1doWHNsSFJfS1hFZyJ9.eyJhdWQiOiJodHRwczovL21hbmFnZW1lbnQuYXp1cmUuY29tIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvZWZmN2Y5ODUtZGM1OC00OTM1LWE5MDYtMDUwNjA5YmU4NWMzLyIsImlhdCI6MTYxMTg0NjUxOCwibmJmIjoxNjExODQ2NTE4LCJleHAiOjE2MTE4NTA0MTgsImFpbyI6IkUyWmdZSWl5L0prcDFpa3hRZmhoczQ3VjBVOWNBQT09IiwiYXBwaWQiOiI0MjIxN2QwNy0wMjI0LTQwNDQtYTY4My0yN2I2MDdmMTRjYWEiLCJhcHBpZGFjciI6IjEiLCJpZHAiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9lZmY3Zjk4NS1kYzU4LTQ5MzUtYTkwNi0wNTA2MDliZTg1YzMvIiwib2lkIjoiZWFmZjgxNDQtNGRlNi00ZDMxLTg1MGEtOGJhOTE2NTAxZDliIiwicmgiOiIwLkFBQUFoZm4zNzFqY05VbXBCZ1VHQ2I2Rnd3ZDlJVUlrQWtSQXBvTW50Z2Z4VEtwdUFBQS4iLCJzdWIiOiJlYWZmODE0NC00ZGU2LTRkMzEtODUwYS04YmE5MTY1MDFkOWIiLCJ0aWQiOiJlZmY3Zjk4NS1kYzU4LTQ5MzUtYTkwNi0wNTA2MDliZTg1YzMiLCJ1dGkiOiJFRTgyT05ycHRrT0hUajFzR0g4MUFBIiwidmVyIjoiMS4wIiwieG1zX3RjZHQiOjE0MjIyOTYzNTZ9.ZLDplpblp0dtTe0DL0QXmLLZpESEjnMFOf9KLNpHOda2QmpRB5aNi66xN-qI6tsLBFhRI0qjVZXc9e9ZVk9FWww6GRItV5GO24iL2gChBgo5FZTlNX5PEtwpINhDLpP-KkIhVs1_Rqf4yE5KsoAN9HpQOpoBBVOqEMQABzzC9OU5bhnZp2gOwbhiyp6caiaDChUTqo5Cxg6bcjDlmm_ZPtCpRPKmo_MELpJz4486yu5QBucAA9AOP3ibC4KR-VkH7A6TpdQSYzY-4KRAMZomMU3VI56nuR4qoWRNj7ObW4z3_dNXxap1-EaJtIdfX1yw15j7msDCyb2pgw4Zm3Nniw"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/aws/s3/buckets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"aws",
+						"s3",
+						"buckets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Bucket By Bucket Name",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Im5PbzNaRHJPRFhFSzFqS1doWHNsSFJfS1hFZyIsImtpZCI6Im5PbzNaRHJPRFhFSzFqS1doWHNsSFJfS1hFZyJ9.eyJhdWQiOiJodHRwczovL21hbmFnZW1lbnQuYXp1cmUuY29tIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvZWZmN2Y5ODUtZGM1OC00OTM1LWE5MDYtMDUwNjA5YmU4NWMzLyIsImlhdCI6MTYxMTg0NjUxOCwibmJmIjoxNjExODQ2NTE4LCJleHAiOjE2MTE4NTA0MTgsImFpbyI6IkUyWmdZSWl5L0prcDFpa3hRZmhoczQ3VjBVOWNBQT09IiwiYXBwaWQiOiI0MjIxN2QwNy0wMjI0LTQwNDQtYTY4My0yN2I2MDdmMTRjYWEiLCJhcHBpZGFjciI6IjEiLCJpZHAiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9lZmY3Zjk4NS1kYzU4LTQ5MzUtYTkwNi0wNTA2MDliZTg1YzMvIiwib2lkIjoiZWFmZjgxNDQtNGRlNi00ZDMxLTg1MGEtOGJhOTE2NTAxZDliIiwicmgiOiIwLkFBQUFoZm4zNzFqY05VbXBCZ1VHQ2I2Rnd3ZDlJVUlrQWtSQXBvTW50Z2Z4VEtwdUFBQS4iLCJzdWIiOiJlYWZmODE0NC00ZGU2LTRkMzEtODUwYS04YmE5MTY1MDFkOWIiLCJ0aWQiOiJlZmY3Zjk4NS1kYzU4LTQ5MzUtYTkwNi0wNTA2MDliZTg1YzMiLCJ1dGkiOiJFRTgyT05ycHRrT0hUajFzR0g4MUFBIiwidmVyIjoiMS4wIiwieG1zX3RjZHQiOjE0MjIyOTYzNTZ9.ZLDplpblp0dtTe0DL0QXmLLZpESEjnMFOf9KLNpHOda2QmpRB5aNi66xN-qI6tsLBFhRI0qjVZXc9e9ZVk9FWww6GRItV5GO24iL2gChBgo5FZTlNX5PEtwpINhDLpP-KkIhVs1_Rqf4yE5KsoAN9HpQOpoBBVOqEMQABzzC9OU5bhnZp2gOwbhiyp6caiaDChUTqo5Cxg6bcjDlmm_ZPtCpRPKmo_MELpJz4486yu5QBucAA9AOP3ibC4KR-VkH7A6TpdQSYzY-4KRAMZomMU3VI56nuR4qoWRNj7ObW4z3_dNXxap1-EaJtIdfX1yw15j7msDCyb2pgw4Zm3Nniw"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/aws/s3/buckets/testnew-23",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"aws",
+						"s3",
+						"buckets",
+						"testnew-23"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Bucket",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Im5PbzNaRHJPRFhFSzFqS1doWHNsSFJfS1hFZyIsImtpZCI6Im5PbzNaRHJPRFhFSzFqS1doWHNsSFJfS1hFZyJ9.eyJhdWQiOiJodHRwczovL21hbmFnZW1lbnQuYXp1cmUuY29tIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvZWZmN2Y5ODUtZGM1OC00OTM1LWE5MDYtMDUwNjA5YmU4NWMzLyIsImlhdCI6MTYxMTg0NjUxOCwibmJmIjoxNjExODQ2NTE4LCJleHAiOjE2MTE4NTA0MTgsImFpbyI6IkUyWmdZSWl5L0prcDFpa3hRZmhoczQ3VjBVOWNBQT09IiwiYXBwaWQiOiI0MjIxN2QwNy0wMjI0LTQwNDQtYTY4My0yN2I2MDdmMTRjYWEiLCJhcHBpZGFjciI6IjEiLCJpZHAiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9lZmY3Zjk4NS1kYzU4LTQ5MzUtYTkwNi0wNTA2MDliZTg1YzMvIiwib2lkIjoiZWFmZjgxNDQtNGRlNi00ZDMxLTg1MGEtOGJhOTE2NTAxZDliIiwicmgiOiIwLkFBQUFoZm4zNzFqY05VbXBCZ1VHQ2I2Rnd3ZDlJVUlrQWtSQXBvTW50Z2Z4VEtwdUFBQS4iLCJzdWIiOiJlYWZmODE0NC00ZGU2LTRkMzEtODUwYS04YmE5MTY1MDFkOWIiLCJ0aWQiOiJlZmY3Zjk4NS1kYzU4LTQ5MzUtYTkwNi0wNTA2MDliZTg1YzMiLCJ1dGkiOiJFRTgyT05ycHRrT0hUajFzR0g4MUFBIiwidmVyIjoiMS4wIiwieG1zX3RjZHQiOjE0MjIyOTYzNTZ9.ZLDplpblp0dtTe0DL0QXmLLZpESEjnMFOf9KLNpHOda2QmpRB5aNi66xN-qI6tsLBFhRI0qjVZXc9e9ZVk9FWww6GRItV5GO24iL2gChBgo5FZTlNX5PEtwpINhDLpP-KkIhVs1_Rqf4yE5KsoAN9HpQOpoBBVOqEMQABzzC9OU5bhnZp2gOwbhiyp6caiaDChUTqo5Cxg6bcjDlmm_ZPtCpRPKmo_MELpJz4486yu5QBucAA9AOP3ibC4KR-VkH7A6TpdQSYzY-4KRAMZomMU3VI56nuR4qoWRNj7ObW4z3_dNXxap1-EaJtIdfX1yw15j7msDCyb2pgw4Zm3Nniw"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"bucketName\":\"testnew-23\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/aws/s3/buckets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"aws",
+						"s3",
+						"buckets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Health",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Im5PbzNaRHJPRFhFSzFqS1doWHNsSFJfS1hFZyIsImtpZCI6Im5PbzNaRHJPRFhFSzFqS1doWHNsSFJfS1hFZyJ9.eyJhdWQiOiJodHRwczovL21hbmFnZW1lbnQuYXp1cmUuY29tIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvZWZmN2Y5ODUtZGM1OC00OTM1LWE5MDYtMDUwNjA5YmU4NWMzLyIsImlhdCI6MTYxMTg0NjUxOCwibmJmIjoxNjExODQ2NTE4LCJleHAiOjE2MTE4NTA0MTgsImFpbyI6IkUyWmdZSWl5L0prcDFpa3hRZmhoczQ3VjBVOWNBQT09IiwiYXBwaWQiOiI0MjIxN2QwNy0wMjI0LTQwNDQtYTY4My0yN2I2MDdmMTRjYWEiLCJhcHBpZGFjciI6IjEiLCJpZHAiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9lZmY3Zjk4NS1kYzU4LTQ5MzUtYTkwNi0wNTA2MDliZTg1YzMvIiwib2lkIjoiZWFmZjgxNDQtNGRlNi00ZDMxLTg1MGEtOGJhOTE2NTAxZDliIiwicmgiOiIwLkFBQUFoZm4zNzFqY05VbXBCZ1VHQ2I2Rnd3ZDlJVUlrQWtSQXBvTW50Z2Z4VEtwdUFBQS4iLCJzdWIiOiJlYWZmODE0NC00ZGU2LTRkMzEtODUwYS04YmE5MTY1MDFkOWIiLCJ0aWQiOiJlZmY3Zjk4NS1kYzU4LTQ5MzUtYTkwNi0wNTA2MDliZTg1YzMiLCJ1dGkiOiJFRTgyT05ycHRrT0hUajFzR0g4MUFBIiwidmVyIjoiMS4wIiwieG1zX3RjZHQiOjE0MjIyOTYzNTZ9.ZLDplpblp0dtTe0DL0QXmLLZpESEjnMFOf9KLNpHOda2QmpRB5aNi66xN-qI6tsLBFhRI0qjVZXc9e9ZVk9FWww6GRItV5GO24iL2gChBgo5FZTlNX5PEtwpINhDLpP-KkIhVs1_Rqf4yE5KsoAN9HpQOpoBBVOqEMQABzzC9OU5bhnZp2gOwbhiyp6caiaDChUTqo5Cxg6bcjDlmm_ZPtCpRPKmo_MELpJz4486yu5QBucAA9AOP3ibC4KR-VkH7A6TpdQSYzY-4KRAMZomMU3VI56nuR4qoWRNj7ObW4z3_dNXxap1-EaJtIdfX1yw15j7msDCyb2pgw4Zm3Nniw"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"bucketName\":\"testnew-23\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/actuator/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"actuator",
+						"health"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

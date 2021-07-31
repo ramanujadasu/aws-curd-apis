@@ -57,7 +57,7 @@ API: Get bucket by bucketName
 
 REQUEST METHOD: GET
 
-REQUEST URL: http://localhost:8080/aws/s3/buckets/<bucketName>
+REQUEST URL: http://localhost:8080/aws/s3/buckets/{bucketName}
 
 ===
 API: Create bucket
@@ -76,6 +76,6 @@ API: Delete bucket
 
 REQUEST METHOD: DELETE
 
-REQUEST URL: http://localhost:8080/aws/s3/buckets/<bucketName>
+REQUEST URL: http://localhost:8080/aws/s3/buckets/{bucketName}
 
 ===

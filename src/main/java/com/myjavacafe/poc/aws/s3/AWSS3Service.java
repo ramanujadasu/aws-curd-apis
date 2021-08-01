@@ -3,6 +3,9 @@ package com.myjavacafe.poc.aws.s3;
 import java.io.File;
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.AmazonS3Client;
 import com.amazonaws.services.s3.model.Bucket;
@@ -12,9 +15,11 @@ import com.amazonaws.services.s3.model.DeleteObjectsResult;
 import com.amazonaws.services.s3.model.ObjectListing;
 import com.amazonaws.services.s3.model.PutObjectResult;
 import com.amazonaws.services.s3.model.S3Object;
+import com.myjavacafe.poc.exceptions.AccessDeniedException;
 
 public class AWSS3Service {
     private final AmazonS3 s3client;
+    private static Logger logger = LoggerFactory.getLogger(AWSS3Service.class);
 
     public AWSS3Service() {
         this(new AmazonS3Client() {
@@ -37,7 +42,12 @@ public class AWSS3Service {
 
     // list all buckets
     public List<Bucket> listBuckets() {
-        return s3client.listBuckets();
+    	try {
+    		return s3client.listBuckets();
+    	}catch(Exception ade) {
+    		logger.error("Exception", ade);
+    		throw new AccessDeniedException(ade.getMessage());
+    	}
     }
 
     // delete a bucket
